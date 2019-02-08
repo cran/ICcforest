@@ -1,0 +1,16 @@
+bc871de6f86907408314ca7b46d8a72c *DESCRIPTION
+cc0bfb254f4cfdf70eaa5c5dca230740 *NAMESPACE
+52e478c988cba2f2c6f0dfe013e7ed7d *NEWS.md
+455d3ed898ff417c7481bfafb0c1c545 *R/ICcforest-package.R
+ce792ab9f587818652452c75209a72db *R/ICcforest.R
+57ae2b1d7964007ed163f876d4c14c5d *R/gettree.ICcforest.R
+93fe3c7ca29fbd063628ca2b67640e68 *R/predict.ICcforest.R
+a4a5b3824527e567c6f515523bc63f3e *R/sbrier_IC.R
+c6d99b7816cf2f513a80771987bfa4d2 *R/tuneICRF.R
+1f2de946b4b0cbca346de6f120505bcf *README.md
+78dd05811f9c2bff052af1d659b29051 *man/ICcforest-package.Rd
+bcddd0911e3e31524fb038c30279ca2f *man/ICcforest.Rd
+16173b12f2712f829d56f0a093927e8b *man/gettree.ICcforest.Rd
+f02201fc96be1e1e49df87647e192c6b *man/predict.ICcforest.Rd
+df10fdc86066d6535ee95fc7aad4443e *man/sbrier_IC.Rd
+a8f4622f47a83fcd4f662efec5e79079 *man/tuneICRF.Rd
