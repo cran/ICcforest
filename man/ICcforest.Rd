@@ -4,12 +4,21 @@
 \alias{ICcforest}
 \title{Fit a conditional inference forest for interval-censored survival data}
 \usage{
-ICcforest(formula, data, mtry = NULL, ntree = 100L, applyfun = NULL,
-  cores = NULL, na.action = na.pass, suppress = TRUE, trace = TRUE,
+ICcforest(
+  formula,
+  data,
+  mtry = NULL,
+  ntree = 100L,
+  applyfun = NULL,
+  cores = NULL,
+  na.action = na.pass,
+  suppress = TRUE,
+  trace = TRUE,
   perturb = list(replace = FALSE, fraction = 0.632),
-  control = partykit::ctree_control(teststat = "quad", testtype = "Univ",
-  mincriterion = 0, saveinfo = FALSE, minsplit = nrow(data) * 0.15,
-  minbucket = nrow(data) * 0.06), ...)
+  control = partykit::ctree_control(teststat = "quad", testtype = "Univ", mincriterion =
+    0, saveinfo = FALSE, minsplit = nrow(data) * 0.15, minbucket = nrow(data) * 0.06),
+  ...
+)
 }
 \arguments{
 \item{formula}{a formula object, with the response being a \code{\link[survival]{Surv}} object, 
@@ -85,10 +94,8 @@ Cforest <- ICcforest(Surv(l, u, type = "interval2") ~ grp, data = miceData)
 \code{\link{predict.ICcforest}} for prediction, \code{\link{gettree.ICcforest}}
 for individual tree extraction, and \code{\link{tuneICRF}} for \code{mtry} tuning.
 }
-\keyword{Ensemble}
-\keyword{conditional}
+\keyword{Conditional}
+\keyword{Interval-censored}
 \keyword{data}
-\keyword{forest,}
+\keyword{forest}
 \keyword{inference}
-\keyword{interval-censored}
-\keyword{method,}

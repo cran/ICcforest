@@ -4,9 +4,17 @@
 \alias{predict.ICcforest}
 \title{Predict from an ICcforest model}
 \usage{
-\method{predict}{ICcforest}(object, newdata = NULL, OOB = FALSE,
-  suppress = TRUE, type = c("response", "prob", "weights", "node"),
-  FUN = NULL, simplify = TRUE, scale = TRUE, ...)
+\method{predict}{ICcforest}(
+  object,
+  newdata = NULL,
+  OOB = FALSE,
+  suppress = TRUE,
+  type = c("response", "prob", "weights", "node"),
+  FUN = NULL,
+  simplify = TRUE,
+  scale = TRUE,
+  ...
+)
 }
 \arguments{
 \item{object}{an object as returned by \code{\link{ICcforest}}.}

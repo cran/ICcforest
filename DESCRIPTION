@@ -1,6 +1,6 @@
 Package: ICcforest
-Version: 0.5.0
-Date: 2019-01-09
+Version: 0.5.1
+Date: 2020-02-16
 Title: An Ensemble Method for Interval-Censored Survival Data
 Authors@R: c(person(given = "Weichi", family = "Yao", role = c("aut", "cre"), 
                     email = "wy635@stern.nyu.edu"),
@@ -11,8 +11,8 @@ Author: Weichi Yao [aut, cre],
   Jeffrey S. Simonoff [aut]
 Maintainer: Weichi Yao <wy635@stern.nyu.edu>
 Depends: R (>= 3.4.0), partykit
-Imports: stats, utils, graphics, survival, icenReg, ipred, parallel
-Suggests: LTRCtrees, inum, bayesSurv
+Imports: stats, utils, graphics, survival, icenReg, ipred
+Suggests: LTRCtrees, inum, parallel
 Description: Implements the conditional inference forest approach 
   to modeling interval-censored survival data. It also provides 
   functions to tune the parameters and evaluate the model fit. See 
@@ -20,8 +20,8 @@ Description: Implements the conditional inference forest approach
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.1.1
+RoxygenNote: 7.0.2
 NeedsCompilation: no
-Packaged: 2019-02-03 20:10:53 UTC; wyao
+Packaged: 2020-02-17 02:44:45 UTC; wyao
 Repository: CRAN
-Date/Publication: 2019-02-08 15:53:24 UTC
+Date/Publication: 2020-02-17 05:30:02 UTC

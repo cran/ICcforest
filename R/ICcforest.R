@@ -41,7 +41,8 @@
 #' @param suppress a logical specifying whether the messages from \code{\link[icenReg]{getFitEsts}} 
 #' are suppressed. If \code{FALSE}, the messages are printed. \code{suppress = TRUE} is set by default.
 #' @param ... additional arguments.
-#' @keywords Ensemble method, conditional inference forest, interval-censored data
+#' @keywords Conditional inference forest 
+#' @keywords Interval-censored data
 #' @return An object of class \code{ICcforest}, as a subclass of \code{\link[partykit]{cforest}}.
 #' @import partykit
 #' @import survival 
@@ -123,7 +124,7 @@ ICcforest <- function(formula, data, mtry = NULL, ntree = 100L, applyfun = NULL,
     list(estfun = matrix(as.double(r), ncol = 1), converged = TRUE)
   }
   
-  if (is.null(mtry)) 
+  if (is.null(mtry))
     mtry <- tuneICRF(formula, data, control = control, suppress = suppress, trace = trace)
   
   if (suppress == TRUE){

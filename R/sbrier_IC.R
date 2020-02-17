@@ -29,7 +29,7 @@ getFitEsts_Surv <- function(Curve, newData = NULL, teval){
 #' the integrated Brier score over the \code{btime} is returned. For \code{"BS"}, the
 #' Brier score at every left and right endpoint of all censoring intervals that lie within
 #' \code{btime} is returned.
-#' @keywords Brier score, integrated Brier score
+#' @keywords (Integrated) Brier score
 #' @return
 #' If \code{type = "IBS"}, this returns the integrated Brier score.
 #' @return

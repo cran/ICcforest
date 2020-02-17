@@ -4,11 +4,19 @@
 \alias{tuneICRF}
 \title{Tune mtry to the optimal value with respect to out-of-bag error for an ICcforest model}
 \usage{
-tuneICRF(formula, data, mtryStart = NULL, stepFactor = 1.5,
-  ntreeTry = 100L, control = partykit::ctree_control(teststat = "quad",
-  testtype = "Univ", mincriterion = 0, saveinfo = FALSE, minsplit =
-  nrow(data) * 0.15, minbucket = nrow(data) * 0.06), suppress = TRUE,
-  trace = TRUE, plot = FALSE, doBest = FALSE)
+tuneICRF(
+  formula,
+  data,
+  mtryStart = NULL,
+  stepFactor = 1.5,
+  ntreeTry = 100L,
+  control = partykit::ctree_control(teststat = "quad", testtype = "Univ", mincriterion =
+    0, saveinfo = FALSE, minsplit = nrow(data) * 0.15, minbucket = nrow(data) * 0.06),
+  suppress = TRUE,
+  trace = TRUE,
+  plot = FALSE,
+  doBest = FALSE
+)
 }
 \arguments{
 \item{formula}{a formula object, with the response being a \code{\link[survival]{Surv}} 
@@ -36,8 +44,6 @@ are suppressed. If \code{FALSE}, the messages are printed. \code{suppress = TRUE
 \item{plot}{whether to plot the out-of-bag error as a function of \code{mtry}.}
 
 \item{doBest}{whether to run an ICcforest using the optimal mtry found.}
-
-\item{...}{additional arguments.}
 }
 \value{
 If \code{doBest=FALSE} (default), this returns the optimal mtry value of those searched.
@@ -67,8 +73,6 @@ mtryTune <- tuneICRF(Surv(l, u, type = "interval2") ~ grp + new, data = miceData
 \code{\link{sbrier_IC}} for evaluation of model fit for interval-censored data 
 when searching for the optimal value of \code{mtry}.
 }
-\keyword{brier}
-\keyword{errors,}
-\keyword{mtry,}
-\keyword{out-of-bag}
-\keyword{score}
+\keyword{Out-of-bag}
+\keyword{mtry}
+\keyword{tuning}

@@ -4,8 +4,12 @@
 \alias{sbrier_IC}
 \title{Model Fit For Interval-Censored Data}
 \usage{
-sbrier_IC(obj, pred, btime = range(as.numeric(obj[, 1:2])),
-  type = c("IBS", "BS"))
+sbrier_IC(
+  obj,
+  pred,
+  btime = range(as.numeric(obj[, 1:2])),
+  type = c("IBS", "BS")
+)
 }
 \arguments{
 \item{obj}{an object of class \code{\link[survival]{Surv}}.}
@@ -66,7 +70,6 @@ sbrier_IC(obj, pred, type = "BS")
 S. Tsouprou. Measures of discrimination and predictive accuracy for interval-censored
 data. Master thesis, Leiden University. https://www.math.leidenuniv.nl/scripties/MasterTsouprou.pdf.
 }
+\keyword{(Integrated)}
 \keyword{Brier}
-\keyword{integrated}
 \keyword{score}
-\keyword{score,}

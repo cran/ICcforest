@@ -19,8 +19,7 @@
 #' @param doBest whether to run an ICcforest using the optimal mtry found.
 #' @param suppress a logical specifying whether the messages from \code{\link[icenReg]{getFitEsts}} 
 #' are suppressed. If \code{FALSE}, the messages are printed. \code{suppress = TRUE} is set by default.
-#' @param ... additional arguments.
-#' @keywords mtry, out-of-bag errors, brier score
+#' @keywords Out-of-bag mtry tuning 
 #' @return 
 #' If \code{doBest=FALSE} (default), this returns the optimal mtry value of those searched.
 #' @return 
